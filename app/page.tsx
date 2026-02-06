@@ -36,10 +36,8 @@ export default function Home() {
     <main className="relative flex flex-col items-center text-center overflow-hidden">
 
       {/* HERO */}
-      <section
-        id="top"
-        className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-white px-6"
-      >
+      <section id="top" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-white px-6">
+
         <p className="uppercase tracking-widest text-sm text-purple-600 font-semibold mb-4">
           FULL-STACK DEVELOPER • AI • DATA
         </p>
@@ -68,10 +66,25 @@ export default function Home() {
             GitHub Profilim
           </a>
         </div>
+
+        <div className="grid grid-cols-3 gap-10 mt-16 text-center">
+          <div>
+            <h3 className="text-3xl font-bold text-purple-600">20+</h3>
+            <p className="text-sm text-gray-500">Layihə</p>
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold text-blue-600">5+</h3>
+            <p className="text-sm text-gray-500">Texnologiya</p>
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold text-pink-600">AI</h3>
+            <p className="text-sm text-gray-500">Fokus</p>
+          </div>
+        </div>
       </section>
 
       {/* HAQQIMDA */}
-      <section className="min-h-screen flex flex-col justify-center mt-24 max-w-4xl px-6 scroll-mt-32">
+      <section className="mt-24 max-w-4xl px-6 scroll-mt-32">
         <FaUserAstronaut className="text-4xl text-purple-600 mx-auto mb-4" />
         <h2 className="text-3xl font-bold mb-6">Mənim haqqımda</h2>
         <p className="text-gray-600">
@@ -85,10 +98,7 @@ export default function Home() {
       </section>
 
       {/* XİDMƏTLƏR */}
-      <section
-        id="projects"
-        className="min-h-screen flex flex-col justify-center scroll-mt-32 mt-32 w-full max-w-6xl"
-      >
+      <section id="projects" className="scroll-mt-32 mt-32 w-full max-w-6xl">
         <h2 className="text-3xl font-bold mb-12">Xidmətlər</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <Card icon={<FaMobileAlt />} title="Mobil Tətbiqlər" desc="Flutter ilə Android & iOS" />
@@ -101,10 +111,7 @@ export default function Home() {
       </section>
 
       {/* BACARIQLAR */}
-      <section
-        id="skills"
-        className="min-h-screen flex flex-col justify-center scroll-mt-32 mt-32 w-full max-w-6xl"
-      >
+      <section id="skills" className="scroll-mt-32 mt-32 w-full max-w-6xl">
         <h2 className="text-3xl font-bold mb-12">Texniki Bacarıqlarım</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-2xl shadow">
@@ -136,10 +143,7 @@ export default function Home() {
       </section>
 
       {/* ƏLAQƏ */}
-      <section
-        id="contact"
-        className="min-h-screen flex flex-col justify-center scroll-mt-32 mt-32 mb-20 w-full max-w-5xl"
-      >
+      <section id="contact" className="scroll-mt-32 mt-32 mb-20 w-full max-w-5xl">
         <h2 className="text-3xl font-bold mb-10">Əlaqə</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <a href="mailto:info@bybourne.xyz" className="flex items-center gap-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
