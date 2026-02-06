@@ -20,9 +20,15 @@ function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-lg text-purple-700">Toğrul Abbasov</h1>
 
+        {/* LOGO → ANA SƏHİFƏ */}
+        <a href="#top" className="font-bold text-lg text-purple-700 hover:opacity-80">
+          Toğrul Abbasov
+        </a>
+
+        {/* DESKTOP MENU */}
         <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-700">
+          <a href="#top" className="hover:text-purple-600">Ana səhifə</a>
           <a href="#projects" className="hover:text-purple-600">Xidmətlər</a>
           <a href="#skills" className="hover:text-purple-600">Bacarıqlar</a>
           <a href="#contact" className="hover:text-purple-600">Əlaqə</a>
@@ -35,13 +41,16 @@ function Navbar() {
           İşə Başlayaq
         </a>
 
+        {/* MOBILE ICON */}
         <button onClick={() => setOpen(!open)} className="md:hidden text-2xl text-purple-700">
           {open ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
+      {/* MOBILE MENU */}
       {open && (
         <div className="md:hidden bg-white border-t border-gray-200 flex flex-col items-center gap-6 py-6 text-gray-700">
+          <a href="#top" onClick={() => setOpen(false)}>Ana səhifə</a>
           <a href="#projects" onClick={() => setOpen(false)}>Xidmətlər</a>
           <a href="#skills" onClick={() => setOpen(false)}>Bacarıqlar</a>
           <a href="#contact" onClick={() => setOpen(false)}>Əlaqə</a>

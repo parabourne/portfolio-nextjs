@@ -36,7 +36,7 @@ export default function Home() {
     <main className="relative flex flex-col items-center text-center overflow-hidden">
 
       {/* HERO */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-white px-6">
+      <section id="top" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 via-purple-50 to-white px-6">
 
         <p className="uppercase tracking-widest text-sm text-purple-600 font-semibold mb-4">
           FULL-STACK DEVELOPER • AI • DATA
@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* HAQQIMDA */}
-      <section className="mt-24 max-w-4xl px-6">
+      <section className="mt-24 max-w-4xl px-6 scroll-mt-32">
         <FaUserAstronaut className="text-4xl text-purple-600 mx-auto mb-4" />
         <h2 className="text-3xl font-bold mb-6">Mənim haqqımda</h2>
         <p className="text-gray-600">
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* XİDMƏTLƏR */}
-      <section id="projects" className="mt-32 w-full max-w-6xl">
+      <section id="projects" className="scroll-mt-32 mt-32 w-full max-w-6xl">
         <h2 className="text-3xl font-bold mb-12">Xidmətlər</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <Card icon={<FaMobileAlt />} title="Mobil Tətbiqlər" desc="Flutter ilə Android & iOS" />
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* BACARIQLAR */}
-      <section id="skills" className="mt-32 w-full max-w-6xl">
+      <section id="skills" className="scroll-mt-32 mt-32 w-full max-w-6xl">
         <h2 className="text-3xl font-bold mb-12">Texniki Bacarıqlarım</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-2xl shadow">
@@ -143,10 +143,9 @@ export default function Home() {
       </section>
 
       {/* ƏLAQƏ */}
-      <section id="contact" className="mt-32 mb-20 w-full max-w-5xl">
+      <section id="contact" className="scroll-mt-32 mt-32 mb-20 w-full max-w-5xl">
         <h2 className="text-3xl font-bold mb-10">Əlaqə</h2>
         <div className="grid md:grid-cols-2 gap-8">
-
           <a href="mailto:info@bybourne.xyz" className="flex items-center gap-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
             <FaEnvelope className="text-3xl text-purple-600" />
             <div>
@@ -178,7 +177,6 @@ export default function Home() {
               <p className="text-sm text-gray-600">bybourne1</p>
             </div>
           </a>
-
         </div>
       </section>
 
