@@ -99,7 +99,10 @@ export default function Home() {
 
       {/* XİDMƏTLƏR */}
       <section id="projects" className="scroll-mt-32 mt-32 w-full max-w-6xl">
-        <h2 className="text-3xl font-bold mb-12">Xidmətlər</h2>
+       <h2 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+  Xidmətlər
+</h2>
+
         <div className="grid md:grid-cols-3 gap-8">
           <Card icon={<FaMobileAlt />} title="Mobil Tətbiqlər" desc="Flutter ilə Android & iOS" />
           <Card icon={<FaCode />} title="Veb Sistemlər" desc="Next.js, React" />
@@ -109,42 +112,64 @@ export default function Home() {
           <Card icon={<FaChartLine />} title="Vizualizasiya" desc="RStudio, matplotlib" />
         </div>
       </section>
+<section
+  id="skills"
+  className="min-h-screen flex flex-col justify-center scroll-mt-24 py-24 w-full max-w-6xl"
+>
+  <h2 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+    Texniki Bacarıqlarım
+  </h2>
 
-      {/* BACARIQLAR */}
-      <section id="skills" className="scroll-mt-32 mt-32 w-full max-w-6xl">
-        <h2 className="text-3xl font-bold mb-12">Texniki Bacarıqlarım</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-2xl shadow">
-            <h3 className="font-semibold text-blue-600 mb-3">Frontend</h3>
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li>React.js</li>
-              <li>Next.js</li>
-              <li>HTML / CSS</li>
-              <li>Tailwind CSS</li>
-            </ul>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow">
-            <h3 className="font-semibold text-green-600 mb-3">Backend</h3>
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li>Node.js</li>
-              <li>Firebase</li>
-              <li>REST API</li>
-            </ul>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow">
-            <h3 className="font-semibold text-purple-600 mb-3">UI / UX</h3>
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li>Modern UI</li>
-              <li>Responsive Design</li>
-              <li>Accessibility</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <p className="text-gray-500 max-w-2xl mx-auto mb-16">
+    Müasir texnologiyalarla yüksək performanslı, təhlükəsiz və istifadəçi yönümlü sistemlər qururam.
+  </p>
+
+  <div className="grid md:grid-cols-3 gap-10">
+    <div className="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+      <h3 className="font-bold text-blue-600 text-xl mb-4">Frontend</h3>
+      <ul className="space-y-2 text-gray-600">
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>HTML / CSS</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+
+    <div className="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+      <h3 className="font-bold text-green-600 text-xl mb-4">Backend</h3>
+      <ul className="space-y-2 text-gray-600">
+        <li>Node.js</li>
+        <li>Firebase</li>
+        <li>REST API</li>
+      </ul>
+    </div>
+
+    <div className="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+      <h3 className="font-bold text-purple-600 text-xl mb-4">UI / UX</h3>
+      <ul className="space-y-2 text-gray-600">
+        <li>Modern UI</li>
+        <li>Responsive Design</li>
+        <li>Accessibility</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* EXTRA VISUAL BALANCE */}
+  <div className="flex justify-center gap-10 mt-20 text-4xl text-purple-500 opacity-70">
+    <FaCode />
+    <FaServer />
+    <FaDatabase />
+  </div>
+</section>
+
 
       {/* ƏLAQƏ */}
-      <section id="contact" className="scroll-mt-32 mt-32 mb-20 w-full max-w-5xl">
-        <h2 className="text-3xl font-bold mb-10">Əlaqə</h2>
+      <section id="contact" className="scroll-mt-32 mt-32 mb-20 w-full max-w-5xl mx-auto">
+
+        <h2 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+  Əlaqə
+</h2>
+
         <div className="grid md:grid-cols-2 gap-8">
           <a href="mailto:info@bybourne.xyz" className="flex items-center gap-4 bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
             <FaEnvelope className="text-3xl text-purple-600" />
